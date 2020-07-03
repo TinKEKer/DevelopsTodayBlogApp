@@ -5,6 +5,8 @@ import {PostsCard} from '../components/PostsCardComp/PostsCard'
 import TabWrapper from '../components/TabBar/TabWrapper'
 import { getRNDColor } from '../functions/getRNDcolor';
 import { statePosts, propsPosts } from '../functions/postsPropsSelector';
+import CircularProgress from '@material-ui/core/CircularProgress';
+import Box from '@material-ui/core/Box';
 
 interface PostObj{
   body:string,
@@ -35,7 +37,9 @@ type Props={
     <TabWrapper>
     {data!==[]&&!loading?data.map(item=><PostsCard data={item} key={item.id} delete={deletePost} color={getRNDColor()}/>
     )
-    :null}
+    :      <Box style={{display: 'flex', justifyContent: 'center',height:'400px',alignItems:'center'}}>
+    <CircularProgress size={100}/>
+    </Box>}
     </TabWrapper>
     </>
   );
