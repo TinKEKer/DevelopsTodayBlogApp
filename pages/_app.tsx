@@ -7,7 +7,7 @@ import { SnackbarProvider} from 'notistack';
 import DeleteIcon from '@material-ui/icons/Delete';
 import NProgress from 'nprogress';
 import Router from 'next/router'
-import 'nprogress/nprogress.css'
+import '../config/nprogress.css'
 
 Router.events.on('routeChangeStart',()=>NProgress.start())
   Router.events.on('routeChangeComplete', () => NProgress.done())
