@@ -1,0 +1,1 @@
+export const normalizeTitle=(title:string):string=>title[0].toUpperCase() + title.slice(1);

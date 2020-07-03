@@ -1,0 +1,6 @@
+export const FETCH_POST:string = "FETCH_POST"
+export const FETCH_POST_START:string = "FETCH_POST_START"
+export const FETCH_POST_SUCCESS :string = "FETCH_POST_SUCCESS"
+export const FETCH_POST_ERROR:string = "FETCH_POST_ERROR"
+export const FETCH_POST_ASYNC:string = "FETCH_POST_ASYNC"
+export const ADD_COMMENT:string="ADD_COMMENT"
